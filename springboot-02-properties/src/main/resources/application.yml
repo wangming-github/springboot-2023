@@ -1,0 +1,23 @@
+#基本格式要求
+#①　大小写敏感
+#②　使用缩进代表层级关系
+#③　相同的部分只出现一次
+#④　注意空格
+student:
+  id: 1
+  name: 张三
+  age: 18
+
+String:
+  str1: Hello \n Spring Boot 没引号
+  str2: 'Hello \n Spring Boot 单引号'
+  str3: "Hello \n Spring Boot 双引号"
+
+#或者写成json格式
+animal:
+  { name: monkey,age: 3 }
+
+#配置数组类型
+custom:
+  array:
+    value: 1,2,3

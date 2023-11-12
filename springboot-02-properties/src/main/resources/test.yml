@@ -1,0 +1,23 @@
+#默认读取为null
+# 如果想要 @PropertySource 读取 .yml 格式的文件需要自定义 YamlPropertySourceFactory
+custom:
+  #对象
+  user:
+    id: 1
+    name: maizi
+    age: 18
+  #写成数组格式
+  array:
+    value: 1,2,3
+  #写成json格式
+  json:
+    { name: monkey,age: 3 }
+  #写成map格式
+  map:
+    value: { name: 张三,age: 99 }
+  #写成list格式
+  list:
+    value:
+      - 1
+      - 2
+      - 3
