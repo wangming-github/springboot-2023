@@ -8,9 +8,11 @@ import org.springframework.context.annotation.PropertySource;
 import java.util.Map;
 
 /**
+ * 自定义Map配置
  * 指定配置文件 classpath:/就是resource文件下
  *
  * @author maizi
+ * @date 2023/11/13
  */
 @Data
 @Configuration
@@ -18,6 +20,9 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "custom.map")
 public class CustomMapConfig {
 
-    Map<String, String> value;
+    /**
+     * 值
+     */
+    private Map<String, String> value;
 
 }

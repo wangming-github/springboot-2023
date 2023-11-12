@@ -7,9 +7,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
+ * 应用程序yaml测试
+ *
+ * @author maizi
  * @version 1.0
  * @author: MaiZi
  * @date: 2023/11/11 23:21
+ * @date 2023/11/13
  */
 
 @Component
@@ -19,8 +23,17 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("student")
 public class ApplicationYaml {
 
+    /**
+     * id
+     */
     private int id;
+    /**
+     * 名称
+     */
     private String name;
+    /**
+     * 年龄
+     */
     private int age;
 
 

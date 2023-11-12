@@ -22,6 +22,9 @@ public class TestYamlController {
     @Resource
     private CustomListConfig customListConfig;
 
+    /**
+     *
+     */
     @Resource
     private CustomMapConfig customMapConfig;
 

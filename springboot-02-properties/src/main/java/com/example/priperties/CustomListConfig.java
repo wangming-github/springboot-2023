@@ -8,9 +8,13 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 /**
+ * 自定义List配置
+ *
+ * @author maizi
  * @version 1.0
  * @author: MaiZi
  * @date: 2023/11/12 17:33
+ * @date 2023/11/13
  */
 @Data
 @Component
@@ -18,5 +22,8 @@ import java.util.List;
 @ConfigurationProperties(prefix = "custom.list")
 public class CustomListConfig {
 
-    List<String> value;
+    /**
+     * 值
+     */
+    private List<String> value;
 }
