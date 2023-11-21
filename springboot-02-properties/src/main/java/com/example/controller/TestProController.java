@@ -7,7 +7,7 @@ import com.example.priperties.TestPropertiesUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.PostConstruct;
@@ -16,8 +16,8 @@ import java.util.Arrays;
 
 /**
  * @version 1.0
- * @author: MaiZi
- * @date: 2023/11/11 23:16
+ * author: MaiZi
+ * date: 2023/11/11 23:16
  */
 @Controller
 @ResponseBody
@@ -55,9 +55,9 @@ public class TestProController {
     private CustomJsonConfig animalYamlJson;
 
 
-    @RequestMapping("/sayHi")
+    @GetMapping("/sayHi")
     public String sayHi() {
-        return "hello world port -> " + port;
+        return "hello world port " + port;
     }
 
     /**
